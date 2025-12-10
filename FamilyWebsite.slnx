@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="AuthApi.Tests/AuthApi.Tests.csproj" />
+  <Project Path="AuthApi/AuthApi.csproj" />
   <Project Path="FamilyWebsite.AppHost/FamilyWebsite.AppHost.csproj" />
   <Project Path="FamilyWebsite.ServiceDefaults/FamilyWebsite.ServiceDefaults.csproj" />
 </Solution>
