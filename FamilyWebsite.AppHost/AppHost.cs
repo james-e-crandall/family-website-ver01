@@ -5,9 +5,8 @@ var keycloak = builder.AddKeycloak("keycloak")
     .WithDataVolume();
 
 var authapi = builder.AddProject<Projects.AuthApi>("authapi")
+    .WithHttpHealthCheck("/heath")
     .WithReference(keycloak)
     .WaitFor(keycloak);
-
-
 
 builder.Build().Run();

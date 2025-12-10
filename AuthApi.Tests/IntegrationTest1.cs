@@ -40,7 +40,7 @@ public class IntegrationTest1
         // Act
         using var httpClient = app.CreateHttpClient("authapi");
         await app.ResourceNotifications.WaitForResourceHealthyAsync("authapi", cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
-        using var response = await httpClient.GetAsync("/", cancellationToken);
+        using var response = await httpClient.GetAsync("/heath", cancellationToken);
     
         // Assert
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
