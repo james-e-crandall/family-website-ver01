@@ -66,7 +66,8 @@
           },
           "defaultConfiguration": "development",
           "options":{
-            "proxyConfig": "proxy.conf.js"
+            "proxyConfig": "proxy.conf.js",
+            "allowedHosts": ["host.docker.internal"]
           }
         },
         "extract-i18n": {

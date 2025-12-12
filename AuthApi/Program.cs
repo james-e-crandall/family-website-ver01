@@ -36,7 +36,7 @@ builder.Services.AddAuthentication(options =>
                         options.TokenValidationParameters.NameClaimType = JwtRegisteredClaimNames.Name;
                         options.TokenValidationParameters.RoleClaimType = "roles";
 
-                        options.CallbackPath = "/signin-oidc";
+                        options.CallbackPath = "/authapi/signin-oidc";
                         options.Scope.Add("family_api.all");
                         options.SignedOutCallbackPath = "/signout-callback-oidc";
 
