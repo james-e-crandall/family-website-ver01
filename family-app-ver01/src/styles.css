@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  padding: 1em;
+  margin: 1em;
+}
+
+
